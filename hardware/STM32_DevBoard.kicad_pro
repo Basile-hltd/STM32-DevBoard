@@ -456,6 +456,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -514,7 +520,7 @@
         "uuid": "1ce911dd-e46b-4dca-9b0b-c360e42c38af"
       }
     ],
-    "used_designators": "#PWR38-39",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -525,6 +531,18 @@
     [
       "94c743bf-3100-466e-980d-6fa8a14eeb79",
       "USB_Connector"
+    ],
+    [
+      "eabb33d4-9169-4aac-b300-80b13d968eb0",
+      "Alimentation"
+    ],
+    [
+      "a1b5e07f-8e46-4abb-a007-02b775538b41",
+      "Sensors"
+    ],
+    [
+      "f78ee303-6dc3-43bd-ada2-cc664ca57914",
+      "RS_485"
     ]
   ],
   "text_variables": {},
