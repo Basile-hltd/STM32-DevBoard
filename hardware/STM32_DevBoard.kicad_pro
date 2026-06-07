@@ -520,7 +520,7 @@
         "uuid": "1ce911dd-e46b-4dca-9b0b-c360e42c38af"
       }
     ],
-    "used_designators": "C14,TP19-20,#FLG7,U8,#PWR64-69,J3",
+    "used_designators": "U4",
     "variants": []
   },
   "sheets": [
@@ -543,6 +543,10 @@
     [
       "f78ee303-6dc3-43bd-ada2-cc664ca57914",
       "RS_485"
+    ],
+    [
+      "11418e19-8f5d-4aa8-9953-a80d804f68ed",
+      "Rotary_Encorder"
     ]
   ],
   "text_variables": {},

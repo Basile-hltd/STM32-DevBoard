@@ -1670,6 +1670,10 @@
 		(color 0 0 0 0)
 		(uuid "ff65703c-d5f4-4a86-9787-ab0fa6f5a9c4")
 	)
+	(no_connect
+		(at 60.96 165.1)
+		(uuid "1f9d017b-be4a-4610-8c84-e79daa9f3ad9")
+	)
 	(wire
 		(pts
 			(xy 71.12 180.34) (xy 71.12 179.07)
@@ -1782,16 +1786,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 30.48) (xy 24.13 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cea4d26-0f2f-4d0a-89af-97ba7962c0db")
-	)
-	(wire
-		(pts
 			(xy 96.52 90.17) (xy 96.52 92.71)
 		)
 		(stroke
@@ -1849,16 +1843,6 @@
 			(type default)
 		)
 		(uuid "4da78316-0624-4556-a3ab-46e6a3adbcd8")
-	)
-	(wire
-		(pts
-			(xy 24.13 34.29) (xy 24.13 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54983541-4769-4415-b039-c486659dc64c")
 	)
 	(wire
 		(pts
@@ -2112,16 +2096,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 30.48) (xy 24.13 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d18f13d5-f1f5-4178-ae09-92f89df4174a")
-	)
-	(wire
-		(pts
 			(xy 195.58 107.95) (xy 195.58 111.76)
 		)
 		(stroke
@@ -2159,16 +2133,6 @@
 			(type default)
 		)
 		(uuid "e3281181-381a-41a7-aec1-1c9cf1bdcf8f")
-	)
-	(wire
-		(pts
-			(xy 30.48 34.29) (xy 24.13 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3b4c5f8-f8ba-4fda-b211-482dd92c29c7")
 	)
 	(wire
 		(pts
@@ -2280,17 +2244,6 @@
 		)
 		(uuid "fb53ea8d-665f-4639-8d44-3cbaba2914d1")
 	)
-	(hierarchical_label "GND"
-		(shape bidirectional)
-		(at 30.48 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52755047-80af-4380-ac81-ec86529bed77")
-	)
 	(hierarchical_label "I2C1_SDA"
 		(shape bidirectional)
 		(at 60.96 34.29 0)
@@ -2301,17 +2254,6 @@
 			(justify left)
 		)
 		(uuid "537bf8be-bf01-4130-8d62-6c5b01a8ab9d")
-	)
-	(hierarchical_label "+3.3V"
-		(shape bidirectional)
-		(at 30.48 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "737ae5d0-685b-456b-affd-ff4f3b0a8811")
 	)
 	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
@@ -2336,7 +2278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "078d3b06-1349-4316-9720-0ec105cc199f")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG05"
 			(at 87.63 114.935 0)
 			(hide yes)
 			(show_name no)
@@ -2396,7 +2338,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#FLG01")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -2414,7 +2356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1406adf7-9cc6-4a2f-94a9-81df6fb36ec8")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR046"
 			(at 24.13 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2474,7 +2416,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR025")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -2491,7 +2433,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14859579-77d7-451b-ae7a-d0d6b7034186")
-		(property "Reference" "R7"
+		(property "Reference" "R16"
 			(at 91.44 118.364 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2553,7 +2495,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "R7")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2571,7 +2513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2384d08e-101d-425b-97c9-e3236b88dd18")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR054"
 			(at 162.56 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2631,7 +2573,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR029")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -2649,7 +2591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34df4bff-e486-4235-8864-a3110181c6b3")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR047"
 			(at 53.34 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -2709,7 +2651,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR030")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -2727,7 +2669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37fc7322-fa9c-43d4-a524-62e4d23180a9")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR052"
 			(at 105.41 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -2787,7 +2729,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR067")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -2805,7 +2747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39ade553-ebe4-4f0d-8dfc-e2b6d0ba7e8f")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 110.49 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2869,7 +2811,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2887,7 +2829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45196504-b29d-4547-8616-6504875b1394")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR053"
 			(at 162.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -2947,7 +2889,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR028")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -2965,7 +2907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59b83127-03ed-4eb7-9afc-e75798d03381")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR048"
 			(at 71.12 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -3025,7 +2967,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR068")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -3043,7 +2985,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6818b411-9cce-42c7-843d-dabe24892bff")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 199.39 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3107,7 +3049,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -3281,7 +3223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d30999d-7513-4de2-8131-3b8daa8e6c84")
-		(property "Reference" "TP12"
+		(property "Reference" "TP14"
 			(at 26.67 53.8479 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3342,85 +3284,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 24.13 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cea48b7-668f-4db5-8b0f-700637aeb2e1")
-		(property "Reference" "#PWR045"
-			(at 24.13 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 24.13 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 24.13 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb4c8f3d-15f1-4aa2-976e-d051ace2e7fe")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR045")
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -3438,7 +3302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b35d35c-473a-4b6d-bd7f-6eb4b0b0296a")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR056"
 			(at 195.58 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3498,7 +3362,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR043")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -3516,7 +3380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c2875ea-ad09-4727-96da-44e5d34126f5")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR055"
 			(at 195.58 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -3576,7 +3440,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR042")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3594,7 +3458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a29dad16-9e4f-4613-a864-04117411dfe0")
-		(property "Reference" "U4"
+		(property "Reference" "U7"
 			(at 156.21 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3674,85 +3538,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 24.13 24.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad253326-53b6-46de-8039-cf60a5dc26c7")
-		(property "Reference" "#PWR044"
-			(at 24.13 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 24.13 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 24.13 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "866c6944-cf8c-4ef2-8301-f9828ef37055")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR044")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -3770,7 +3556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b014c3f6-f0a9-46b8-8c89-932252f2093f")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR051"
 			(at 105.41 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -3830,7 +3616,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR066")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3848,7 +3634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b19dd4d7-ee5a-4232-83a8-86d4bd877734")
-		(property "Reference" "U8"
+		(property "Reference" "U6"
 			(at 80.01 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3930,7 +3716,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "U8")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -3948,7 +3734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8a56049-8626-4ffc-9eae-5c4d8547ca9a")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR050"
 			(at 96.52 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4008,7 +3794,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR031")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4026,7 +3812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c55b6a6a-3a88-4792-a929-93aedfaaf07e")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG04"
 			(at 87.63 98.425 0)
 			(hide yes)
 			(show_name no)
@@ -4086,7 +3872,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#FLG02")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -4104,7 +3890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c83cca9a-2a62-416a-ba26-c4d2b6f054dd")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR049"
 			(at 71.12 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -4164,7 +3950,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "#PWR069")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -4182,7 +3968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9215374-4a29-4511-9702-5218d5e57f01")
-		(property "Reference" "R8"
+		(property "Reference" "R17"
 			(at 109.22 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4246,7 +4032,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "R8")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -4264,7 +4050,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d91d142d-00b3-452c-a17a-deb46a75348c")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 100.33 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4328,7 +4114,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4346,7 +4132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd0386a0-c5f0-44d4-84d5-514e4f3b8f5b")
-		(property "Reference" "C14"
+		(property "Reference" "C10"
 			(at 109.22 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4410,7 +4196,7 @@
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/a1b5e07f-8e46-4abb-a007-02b775538b41"
-					(reference "C14")
+					(reference "C10")
 					(unit 1)
 				)
 			)
