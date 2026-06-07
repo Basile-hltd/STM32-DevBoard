@@ -288,7 +288,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Zener"
+		(symbol "Device:D_Schottky"
 			(pin_numbers
 				(hide yes)
 			)
@@ -311,7 +311,7 @@
 					)
 				)
 			)
-			(property "Value" "D_Zener"
+			(property "Value" "D_Schottky"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -343,7 +343,7 @@
 					)
 				)
 			)
-			(property "Description" "Zener diode"
+			(property "Description" "Schottky diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -354,7 +354,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "diode"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -376,10 +376,22 @@
 					)
 				)
 			)
-			(symbol "D_Zener_0_1"
+			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -401,20 +413,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "D_Zener_1_1"
+			(symbol "D_Schottky_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2061,22 +2061,16 @@
 		)
 	)
 	(junction
-		(at 146.05 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0cf3751c-5c2d-49cc-8baf-74e8483601c3")
-	)
-	(junction
 		(at 209.55 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e8e129c-c512-4d5b-8c38-12549f6accc7")
 	)
 	(junction
-		(at 220.98 44.45)
+		(at 224.79 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "201bdfcf-d4f8-45ca-ac3c-d4026ceb264d")
+		(uuid "1ade224c-fa92-4e1c-99aa-de65233982bb")
 	)
 	(junction
 		(at 35.56 130.81)
@@ -2085,10 +2079,10 @@
 		(uuid "48cee4ed-d529-4c1e-b1b5-be5b3024a36f")
 	)
 	(junction
-		(at 135.89 87.63)
+		(at 234.95 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "56bd523a-2ac6-4df5-bbd7-040a97fecb66")
+		(uuid "4cae98f6-bd23-48d6-9b38-5369bbd82ff2")
 	)
 	(junction
 		(at 62.23 130.81)
@@ -2101,12 +2095,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a80f281-cfbf-4e6d-a5f3-3174b8b235d2")
-	)
-	(junction
-		(at 233.68 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95be502e-32dd-40ef-adeb-45fb2ef9573e")
 	)
 	(junction
 		(at 62.23 137.16)
@@ -2140,6 +2128,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 25.4) (xy 234.95 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e76ce7-420d-4509-a052-4df75437e416")
+	)
+	(wire
+		(pts
 			(xy 120.65 43.18) (xy 120.65 52.07)
 		)
 		(stroke
@@ -2170,16 +2168,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 87.63) (xy 143.51 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ccd3bba-2c6b-42d8-a057-f0924a1412b8")
-	)
-	(wire
-		(pts
 			(xy 81.28 97.79) (xy 91.44 97.79)
 		)
 		(stroke
@@ -2207,6 +2195,16 @@
 			(type default)
 		)
 		(uuid "12ea706e-4f32-4e43-bae4-d8664e546f8e")
+	)
+	(wire
+		(pts
+			(xy 234.95 35.56) (xy 234.95 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ac10c65-bc1f-49c7-a9e1-498fa4df494b")
 	)
 	(wire
 		(pts
@@ -2270,16 +2268,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 39.37) (xy 233.68 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "355968b6-caa1-4e9b-950a-bf9a88011fe7")
-	)
-	(wire
-		(pts
 			(xy 134.62 111.76) (xy 134.62 107.95)
 		)
 		(stroke
@@ -2297,16 +2285,6 @@
 			(type default)
 		)
 		(uuid "384d26cc-da55-4c9a-8866-7b14d7998b07")
-	)
-	(wire
-		(pts
-			(xy 220.98 44.45) (xy 220.98 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39da1245-bd68-4d61-be67-cd3bcf024adf")
 	)
 	(wire
 		(pts
@@ -2340,6 +2318,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 25.4) (xy 224.79 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48bc7d4b-cc95-496a-9dc0-d83efcc5d987")
+	)
+	(wire
+		(pts
 			(xy 209.55 92.71) (xy 209.55 93.98)
 		)
 		(stroke
@@ -2347,16 +2335,6 @@
 			(type default)
 		)
 		(uuid "4b494d1f-faa9-47da-b249-2440e8b14a8e")
-	)
-	(wire
-		(pts
-			(xy 233.68 39.37) (xy 233.68 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ba1a3e6-ffc4-49a9-8c74-1ac25d80d323")
 	)
 	(wire
 		(pts
@@ -2400,6 +2378,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 44.45) (xy 252.73 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee4b6f8-27b6-4556-ba30-0f4c97f49148")
+	)
+	(wire
+		(pts
 			(xy 194.31 96.52) (xy 209.55 96.52)
 		)
 		(stroke
@@ -2440,16 +2428,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 57.15) (xy 233.68 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9760a99a-36e2-4e7c-b308-18c4702dce57")
-	)
-	(wire
-		(pts
 			(xy 252.73 88.9) (xy 252.73 96.52)
 		)
 		(stroke
@@ -2480,23 +2458,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 44.45) (xy 252.73 44.45)
+			(xy 224.79 35.56) (xy 224.79 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9fff21c6-a55a-4136-a305-c267603a7c12")
-	)
-	(wire
-		(pts
-			(xy 146.05 105.41) (xy 149.86 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a13eea2c-16ce-47b1-a98d-2b7dc789fb0b")
+		(uuid "9d723ed8-b9c6-41e8-b938-ad6dbcb28488")
 	)
 	(wire
 		(pts
@@ -2537,6 +2505,16 @@
 			(type default)
 		)
 		(uuid "b505f93b-95df-4582-af87-746cb82fe879")
+	)
+	(wire
+		(pts
+			(xy 224.79 39.37) (xy 252.73 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b824f669-ffb6-4240-84ea-37bfcf223163")
 	)
 	(wire
 		(pts
@@ -2600,13 +2578,23 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 44.45) (xy 220.98 44.45)
+			(xy 218.44 44.45) (xy 234.95 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dd3cb46c-b6d9-43bd-8b88-de9d878b5e96")
+	)
+	(wire
+		(pts
+			(xy 218.44 39.37) (xy 224.79 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c4cf59-8e67-4dcd-bedd-f9fa715a4c1f")
 	)
 	(wire
 		(pts
@@ -2640,16 +2628,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 57.15) (xy 220.98 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eda6b896-e334-4371-9007-4654e3d5c096")
-	)
-	(wire
-		(pts
 			(xy 53.34 137.16) (xy 62.23 137.16)
 		)
 		(stroke
@@ -2667,16 +2645,6 @@
 			(type default)
 		)
 		(uuid "f323ad30-3fdc-422e-827f-08c7246a7d8e")
-	)
-	(wire
-		(pts
-			(xy 233.68 39.37) (xy 252.73 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46afc82-1253-4522-9afc-f3d7c6c266ca")
 	)
 	(wire
 		(pts
@@ -2881,17 +2849,6 @@
 		)
 		(uuid "643bf43c-0960-4810-bca7-cd9378d30193")
 	)
-	(hierarchical_label "VBUS"
-		(shape output)
-		(at 143.51 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7e0fa596-906c-4ef3-b668-8dcd484bc8c4")
-	)
 	(hierarchical_label "D-"
 		(shape bidirectional)
 		(at 209.55 97.79 270)
@@ -2902,17 +2859,6 @@
 			(justify right)
 		)
 		(uuid "9da8f7d6-85c0-412f-bcd0-7d651554242f")
-	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 149.86 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d66807e0-2e61-45da-8e09-2737aab284b7")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -2948,7 +2894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 248.92 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3348,7 +3294,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 219.71 95.758 90)
 			(hide yes)
 			(show_name no)
@@ -3671,6 +3617,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 234.95 31.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b72d406-9363-4cd4-a7f0-4816dc110974")
+		(property "Reference" "D3"
+			(at 237.49 30.1624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CC"
+			(at 237.49 32.7024 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 234.95 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 234.95 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac9ac7eb-713c-4600-81fc-8fa522a32b5a")
+		)
+		(pin "2"
+			(uuid "e581b51a-17e0-468d-ad4c-c20cc87ab03a")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 120.65 52.07 180)
 		(unit 1)
@@ -3788,7 +3816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 257.81 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3867,7 +3895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 108.712 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -3922,88 +3950,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 220.98 53.34 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "628907bd-9209-4577-8f72-54cd9cb68548")
-		(property "Reference" "D2"
-			(at 223.52 52.0699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3v"
-			(at 223.52 54.6099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 220.98 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "869e64f0-632d-4cdd-b723-3a30055b17f0")
-		)
-		(pin "2"
-			(uuid "aee1a990-0f67-4d35-9ac8-29130f755696")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 214.63 39.37 90)
 		(unit 1)
@@ -4034,7 +3980,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 214.63 41.148 90)
 			(hide yes)
 			(show_name no)
@@ -4167,8 +4113,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener")
-		(at 233.68 53.34 270)
+		(lib_id "power:VBUS")
+		(at 234.95 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4177,31 +4123,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8200ffd5-f9e5-464c-8859-0d17b081383b")
-		(property "Reference" "D3"
-			(at 236.22 52.0699 90)
+		(uuid "835edefc-d508-4da0-b674-b13b61c8182f")
+		(property "Reference" "#PWR039"
+			(at 234.95 29.21 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "3.3v"
-			(at 236.22 54.6099 90)
+		(property "Value" "VBUS"
+			(at 234.95 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 53.34 0)
+			(at 234.95 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4212,7 +4157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 53.34 0)
+			(at 234.95 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,8 +4167,8 @@
 				)
 			)
 		)
-		(property "Description" "Zener diode"
-			(at 233.68 53.34 0)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 234.95 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4234,15 +4179,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "84bd6c75-eaec-4ec4-899b-8e62483ec374")
-		)
-		(pin "2"
-			(uuid "f32e48fa-516a-43d3-8ea5-e443ae091840")
+			(uuid "1a44eb30-6d95-471f-871a-222222c2f7c5")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
-					(reference "D3")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -4282,7 +4224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 118.872 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -4613,7 +4555,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 219.71 98.298 90)
 			(hide yes)
 			(show_name no)
@@ -4662,84 +4604,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 233.68 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a54f5fa1-7bf0-4bbe-b626-4ce6d589705f")
-		(property "Reference" "#PWR039"
-			(at 233.68 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 233.68 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52ee18b6-ae8e-4db4-aa84-b26d68a5653a")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 214.63 44.45 90)
 		(unit 1)
@@ -4770,7 +4634,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 214.63 46.228 90)
 			(hide yes)
 			(show_name no)
@@ -4852,7 +4716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 159.7152 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4907,8 +4771,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 220.98 60.96 0)
+		(lib_id "Device:D_Schottky")
+		(at 224.79 31.75 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4917,30 +4781,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bfea8c7c-823e-442b-81ef-5772168cad50")
-		(property "Reference" "#PWR038"
-			(at 220.98 67.31 0)
-			(hide yes)
+		(uuid "bc2cf9f6-d9b7-4219-adee-4d2759854d60")
+		(property "Reference" "D2"
+			(at 227.33 30.1624 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 220.98 66.04 0)
+		(property "Value" "CC"
+			(at 227.33 32.7024 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 220.98 60.96 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 224.79 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4951,7 +4816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 60.96 0)
+			(at 224.79 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4961,8 +4826,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 60.96 0)
+		(property "Description" "Schottky diode"
+			(at 224.79 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4973,12 +4838,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6467b7df-2eb0-42fa-a977-88a49b8b2f0c")
+			(uuid "79bc36c9-1f56-4d39-9a2a-1cc2aecd4d95")
+		)
+		(pin "2"
+			(uuid "5fc4d920-c5b2-4c54-9d42-20e42193d43f")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
-					(reference "#PWR038")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5082,6 +4950,84 @@
 			(project "USB_Connector"
 				(path "/cbc335e1-a62e-4e64-bc87-be708e146c19"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 224.79 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d614f057-3bef-4c85-a414-d0647a3b2453")
+		(property "Reference" "#PWR038"
+			(at 224.79 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 224.79 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 224.79 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2284f555-d39f-4624-8ba6-64fe066f525c")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -5364,7 +5310,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 53.34 136.1948 0)
 			(hide yes)
 			(show_name no)
@@ -5524,7 +5470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 93.98 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -5600,7 +5546,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 49.53 132.588 90)
 			(hide yes)
 			(show_name no)

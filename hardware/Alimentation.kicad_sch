@@ -1733,7 +1733,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "3v3_LED"
 			(at 194.31 105.7274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1744,7 +1744,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 190.5 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -1837,7 +1837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 195.58 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1994,7 +1994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 126.6952 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2076,7 +2076,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2155,7 +2155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 113.792 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -2393,7 +2393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm"
 			(at 228.6 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -2472,7 +2472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 188.722 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -2790,7 +2790,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "VBUS_LED"
 			(at 119.38 105.7274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2801,7 +2801,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 115.57 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2894,7 +2894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 177.4952 95.25 0)
 			(hide yes)
 			(show_name no)
