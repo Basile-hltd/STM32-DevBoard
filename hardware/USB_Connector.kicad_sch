@@ -7,7 +7,7 @@
 	(title_block
 		(title "STM32-DevBoard")
 		(date "2026-06-03")
-		(company "Lang & Hiltpold SNC")
+		(company "Lang & Hiltpold Software SNC")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2079,6 +2079,12 @@
 		(uuid "48cee4ed-d529-4c1e-b1b5-be5b3024a36f")
 	)
 	(junction
+		(at 209.55 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51cbe8a5-be44-4b27-8cee-50e473a45ce3")
+	)
+	(junction
 		(at 135.89 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2107,6 +2113,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c52c5bbe-2ce6-466a-bcac-c3af47316ba3")
+	)
+	(junction
+		(at 209.55 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7a9a4e6-5712-4ac0-a2db-39a74199fa28")
 	)
 	(no_connect
 		(at 132.08 100.33)
@@ -2228,6 +2240,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 88.9) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecf3f96-9451-4565-8bac-3f1658087d32")
+	)
+	(wire
+		(pts
 			(xy 35.56 129.54) (xy 35.56 130.81)
 		)
 		(stroke
@@ -2288,6 +2310,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 96.52) (xy 209.55 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39ddc945-09e7-4d2a-903e-f844947de61f")
+	)
+	(wire
+		(pts
 			(xy 110.49 138.43) (xy 110.49 140.97)
 		)
 		(stroke
@@ -2305,6 +2337,16 @@
 			(type default)
 		)
 		(uuid "47b3c765-8fa1-4862-8e9b-fdb9d967aed8")
+	)
+	(wire
+		(pts
+			(xy 209.55 92.71) (xy 209.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b494d1f-faa9-47da-b249-2440e8b14a8e")
 	)
 	(wire
 		(pts
@@ -2335,6 +2377,16 @@
 			(type default)
 		)
 		(uuid "695adeaa-6894-4288-88af-69b44d0852f3")
+	)
+	(wire
+		(pts
+			(xy 240.03 96.52) (xy 209.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701b61ec-8255-49be-882c-b77ad5e9825a")
 	)
 	(wire
 		(pts
@@ -2385,6 +2437,16 @@
 			(type default)
 		)
 		(uuid "9760a99a-36e2-4e7c-b308-18c4702dce57")
+	)
+	(wire
+		(pts
+			(xy 240.03 88.9) (xy 240.03 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98195d8b-21f1-43b4-862c-9ada7a9bbd4e")
 	)
 	(wire
 		(pts
@@ -2596,6 +2658,16 @@
 		)
 		(uuid "f52b6e7a-9a71-4811-94cc-ba2266396322")
 	)
+	(wire
+		(pts
+			(xy 209.55 93.98) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffee7cd0-d82b-42c0-88d0-ea9574284f2d")
+	)
 	(label "D-"
 		(at 199.39 96.52 0)
 		(effects
@@ -2769,7 +2841,7 @@
 	)
 	(hierarchical_label "D+"
 		(shape bidirectional)
-		(at 209.55 93.98 0)
+		(at 209.55 92.71 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2802,12 +2874,12 @@
 	)
 	(hierarchical_label "D-"
 		(shape bidirectional)
-		(at 209.55 96.52 0)
+		(at 209.55 97.79 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "9da8f7d6-85c0-412f-bcd0-7d651554242f")
 	)
@@ -2821,6 +2893,85 @@
 			(justify left)
 		)
 		(uuid "d66807e0-2e61-45da-8e09-2737aab284b7")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 224.79 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "050305ad-b914-4ad1-89e9-5409c1e30727")
+		(property "Reference" "TP19"
+			(at 227.33 84.3279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D+"
+			(at 227.33 86.8679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 224.79 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74cffd55-282c-484c-82f7-5ba0a2375e97")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
+					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3499,6 +3650,85 @@
 			(project "USB_Connector"
 				(path "/cbc335e1-a62e-4e64-bc87-be708e146c19"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 240.03 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ebb01b3-0bdb-4c76-a485-150b5d97e5e9")
+		(property "Reference" "TP20"
+			(at 242.57 84.3279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D-"
+			(at 242.57 86.8679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 240.03 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de84c2f3-38a4-4226-a772-6a21fd7e7faf")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/94c743bf-3100-466e-980d-6fa8a14eeb79"
+					(reference "TP20")
 					(unit 1)
 				)
 			)

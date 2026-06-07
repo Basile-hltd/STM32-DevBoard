@@ -7,7 +7,7 @@
 	(title_block
 		(title "STM32-DevBoard")
 		(date "2026-06-03")
-		(company "Lang & Hiltpold SNC")
+		(company "Lang & Hiltpold Software SNC")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -3724,10 +3724,6 @@
 		(uuid "92c11463-94ca-416d-ae00-61f87d48ba1a")
 	)
 	(no_connect
-		(at 173.99 85.09)
-		(uuid "93fea69f-dae3-4f72-86ac-afe58d5fd6da")
-	)
-	(no_connect
 		(at 173.99 128.27)
 		(uuid "9a06a488-f234-441c-88f8-e18bbe77db0f")
 	)
@@ -4264,6 +4260,16 @@
 			(type default)
 		)
 		(uuid "5310891c-bebc-4654-8dea-3de1bfa9d5b5")
+	)
+	(wire
+		(pts
+			(xy 173.99 85.09) (xy 180.34 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f58e68-a884-4863-a32e-5bb9779e6c29")
 	)
 	(wire
 		(pts
@@ -5434,6 +5440,16 @@
 			(justify left bottom)
 		)
 		(uuid "f64c4282-d083-4870-aad1-933f0a55db91")
+	)
+	(label "SWDIO"
+		(at 180.34 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f77d0865-a907-4772-80dc-2cabb797a828")
 	)
 	(symbol
 		(lib_id "MCU_ST_STM32C0:STM32C071CBTx")

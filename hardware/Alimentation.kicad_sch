@@ -7,7 +7,7 @@
 	(title_block
 		(title "STM32-DevBoard")
 		(date "2026-06-03")
-		(company "Lang & Hiltpold SNC")
+		(company "Lang & Hiltpold Software SNC")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
