@@ -1321,6 +1321,268 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_3_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_3_Open"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 3-pole, open"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+				(at 0 -17.78 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Solder Jumper SPDT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.016) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.016 -1.016)
+					(mid -2.0276 0)
+					(end -1.016 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 1.016)
+					(end 0.508 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 1.016)
+					(mid 2.0276 0)
+					(end 1.016 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "RS_485_LIB:TP8485E-SR"
 			(pin_names
 				(offset 0.254)
@@ -2078,18 +2340,6 @@
 		(uuid "29550339-3387-42f9-867f-6fa23fc43fcd")
 	)
 	(junction
-		(at 101.6 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34cfeefb-795f-4e3f-b070-c887c16b995b")
-	)
-	(junction
-		(at 101.6 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35f57b9b-af1e-48f1-9b61-20c4bff588ba")
-	)
-	(junction
 		(at 232.41 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2120,16 +2370,16 @@
 		(uuid "5dde9ca4-b564-4f90-850e-84bc1c0ff887")
 	)
 	(junction
-		(at 142.24 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "697202c5-580d-4835-85c0-cd3eb6179441")
-	)
-	(junction
 		(at 232.41 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "823cc15c-d0be-49c0-82bd-d20b46d74f12")
+	)
+	(junction
+		(at 134.62 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8acc3169-9772-4090-b4eb-b22c4a358119")
 	)
 	(junction
 		(at 228.6 50.8)
@@ -2138,22 +2388,16 @@
 		(uuid "90d4bb8a-156a-4c3e-8b12-c3afe81e2261")
 	)
 	(junction
-		(at 101.6 152.4)
+		(at 134.62 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "991b7c5c-80e7-4df8-8954-d3f8b9bf39a9")
+		(uuid "9328b7a3-b511-4dc9-bd5c-eda6f5ab6c65")
 	)
 	(junction
 		(at 88.9 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a29707aa-7ace-4cf1-ba69-af4b77586119")
-	)
-	(junction
-		(at 142.24 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2994f43-2fe8-4c23-a3f8-a800fa58b5d9")
 	)
 	(junction
 		(at 123.19 101.6)
@@ -2189,13 +2433,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 154.94) (xy 142.24 152.4)
+			(xy 134.62 179.07) (xy 134.62 181.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "145b176b-ac06-475d-b756-439848d7cf91")
+		(uuid "0b9a51d6-1463-459a-8c1b-552374a3f6e7")
 	)
 	(wire
 		(pts
@@ -2206,36 +2450,6 @@
 			(type default)
 		)
 		(uuid "158483b5-9dca-41ad-9d09-46fcfaf9c004")
-	)
-	(wire
-		(pts
-			(xy 101.6 152.4) (xy 105.41 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e3b4f86-b531-478b-ac79-7821bc1a559c")
-	)
-	(wire
-		(pts
-			(xy 101.6 170.18) (xy 101.6 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fa472e3-5b67-47bb-991a-c490c7865ed2")
-	)
-	(wire
-		(pts
-			(xy 156.21 167.64) (xy 158.75 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23259680-90f5-4ede-b9b5-61c09a5b0664")
 	)
 	(wire
 		(pts
@@ -2279,16 +2493,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 154.94) (xy 142.24 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f277c42-eda4-4466-bf40-553ade95030e")
-	)
-	(wire
-		(pts
 			(xy 228.6 43.18) (xy 228.6 50.8)
 		)
 		(stroke
@@ -2306,16 +2510,6 @@
 			(type default)
 		)
 		(uuid "31721247-92c2-487e-95f0-4d44d8d80442")
-	)
-	(wire
-		(pts
-			(xy 113.03 154.94) (xy 130.81 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "321465c6-1184-43c3-ba6e-5a4e0d2ee867")
 	)
 	(wire
 		(pts
@@ -2346,16 +2540,6 @@
 			(type default)
 		)
 		(uuid "35a74be8-21a5-4fb3-9625-ca11d652b9d6")
-	)
-	(wire
-		(pts
-			(xy 142.24 170.18) (xy 142.24 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a4344d2-897f-4226-a057-5700051d227b")
 	)
 	(wire
 		(pts
@@ -2409,26 +2593,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 167.64) (xy 101.6 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ba236ce-db8b-4ba3-9130-dd0e2237abc3")
-	)
-	(wire
-		(pts
-			(xy 101.6 154.94) (xy 101.6 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e860813-4293-451d-b91c-fa484d0dbaa4")
-	)
-	(wire
-		(pts
 			(xy 167.64 97.79) (xy 163.83 97.79)
 		)
 		(stroke
@@ -2449,23 +2613,33 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 167.64) (xy 142.24 167.64)
+			(xy 101.6 154.94) (xy 101.6 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59ac5531-5da9-491b-915b-52d3d72cf226")
+		(uuid "58d28113-4b91-4abb-8606-bb9238ab14d6")
 	)
 	(wire
 		(pts
-			(xy 105.41 170.18) (xy 101.6 170.18)
+			(xy 105.41 173.99) (xy 107.95 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a4d27ef-756b-4777-996e-ebd3f9841080")
+		(uuid "599d58e9-6c48-4862-8c2a-beb53c1bebee")
+	)
+	(wire
+		(pts
+			(xy 105.41 149.86) (xy 107.95 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616ab6db-e45c-42ad-bd2f-22a39c708f8c")
 	)
 	(wire
 		(pts
@@ -2476,16 +2650,6 @@
 			(type default)
 		)
 		(uuid "640013ef-f287-4d24-966f-4e506678ab4f")
-	)
-	(wire
-		(pts
-			(xy 113.03 152.4) (xy 130.81 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65d868ae-ae1e-4619-bd25-aded045d46d8")
 	)
 	(wire
 		(pts
@@ -2509,23 +2673,33 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 152.4) (xy 142.24 152.4)
+			(xy 101.6 157.48) (xy 134.62 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f815b40-3cdc-4031-84f3-c111b0abaf4b")
+		(uuid "6d22e7e2-fb37-403a-8682-0e9b78153ae8")
 	)
 	(wire
 		(pts
-			(xy 142.24 152.4) (xy 148.59 152.4)
+			(xy 134.62 143.51) (xy 134.62 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "776bb073-b71a-45dd-b4a7-7440393e6664")
+		(uuid "6dff8a05-dfb2-4a69-b6be-f2c13928d024")
+	)
+	(wire
+		(pts
+			(xy 101.6 167.64) (xy 101.6 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7891f27b-faaa-4f48-937d-12ea69386c32")
 	)
 	(wire
 		(pts
@@ -2569,13 +2743,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 146.05) (xy 101.6 152.4)
+			(xy 138.43 149.86) (xy 140.97 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "88e6be77-a6d5-4b9f-90ab-38a13c5cd19b")
+		(uuid "8064b6b5-019b-4abc-b6a0-9e1a44786c95")
 	)
 	(wire
 		(pts
@@ -2586,6 +2760,16 @@
 			(type default)
 		)
 		(uuid "8b87cdf0-7ad7-46d4-828c-267819205661")
+	)
+	(wire
+		(pts
+			(xy 134.62 181.61) (xy 139.7 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "954ee445-ac08-49e0-93a6-d9cd0a81ff22")
 	)
 	(wire
 		(pts
@@ -2629,6 +2813,26 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 154.94) (xy 134.62 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a22dd6e-60e3-4ad0-8b7a-5088118344fd")
+	)
+	(wire
+		(pts
+			(xy 134.62 167.64) (xy 134.62 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d394b3b-49d1-4b9b-8687-03f3bd6c04c6")
+	)
+	(wire
+		(pts
 			(xy 234.95 45.72) (xy 232.41 45.72)
 		)
 		(stroke
@@ -2659,16 +2863,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 167.64) (xy 148.59 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab364f2a-bca4-4c9a-b9c1-85d8e50ec19d")
-	)
-	(wire
-		(pts
 			(xy 143.51 48.26) (xy 143.51 52.07)
 		)
 		(stroke
@@ -2686,16 +2880,6 @@
 			(type default)
 		)
 		(uuid "afb79c5c-19b2-43c4-8fa4-138d52d59c97")
-	)
-	(wire
-		(pts
-			(xy 105.41 154.94) (xy 101.6 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b22d14cd-dfc9-467d-9a71-b5ad12720b53")
 	)
 	(wire
 		(pts
@@ -2736,16 +2920,6 @@
 			(type default)
 		)
 		(uuid "b8391fba-8229-45e7-a611-63c1ffe7f6e5")
-	)
-	(wire
-		(pts
-			(xy 113.03 167.64) (xy 130.81 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba0d1cf7-f4b1-4ef7-bf5f-82c1164f32fe")
 	)
 	(wire
 		(pts
@@ -2799,16 +2973,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 170.18) (xy 142.24 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9a48d46-cff7-4290-a6c2-ad04bfb3fba8")
-	)
-	(wire
-		(pts
 			(xy 80.01 31.75) (xy 88.9 31.75)
 		)
 		(stroke
@@ -2819,13 +2983,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 170.18) (xy 130.81 170.18)
+			(xy 147.32 157.48) (xy 149.86 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d34c718f-862c-44be-b12d-311b04017e2f")
+		(uuid "cc27d472-184d-4da1-b4c6-4b8dafefdb10")
+	)
+	(wire
+		(pts
+			(xy 101.6 181.61) (xy 134.62 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3601c24-10aa-429e-aa26-1a1f037b0408")
 	)
 	(wire
 		(pts
@@ -2879,6 +3053,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 179.07) (xy 101.6 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deaa3038-9da0-4ed2-9e35-e34cf2d93a1b")
+	)
+	(wire
+		(pts
 			(xy 88.9 31.75) (xy 88.9 38.1)
 		)
 		(stroke
@@ -2889,13 +3073,23 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 152.4) (xy 158.75 152.4)
+			(xy 101.6 143.51) (xy 101.6 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0f5a27e-80f2-4999-93bd-7ca7f1d19fa1")
+		(uuid "e216a104-da5c-4c6e-9095-8e96e4c0fe5e")
+	)
+	(wire
+		(pts
+			(xy 147.32 181.61) (xy 149.86 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3931f2f-effc-4369-a64b-44a91ef69919")
 	)
 	(wire
 		(pts
@@ -2939,13 +3133,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 154.94) (xy 101.6 152.4)
+			(xy 134.62 157.48) (xy 139.7 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f82a4426-a017-4ab6-9751-1760fb93c369")
+		(uuid "ef417ca1-2c60-4c6d-9a03-e63d9c52e22f")
 	)
 	(wire
 		(pts
@@ -2956,6 +3150,16 @@
 			(type default)
 		)
 		(uuid "fa168851-6d7c-4853-b8dc-3b747eb98f60")
+	)
+	(wire
+		(pts
+			(xy 138.43 173.99) (xy 140.97 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fafd79d9-ceb5-42b8-b644-18195b72c663")
 	)
 	(wire
 		(pts
@@ -2987,8 +3191,18 @@
 		)
 		(uuid "ffcf5a2f-ce55-4626-b724-23eaba034e8a")
 	)
+	(label "USART1_TX"
+		(at 149.86 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "081e0ea1-84e6-4ecb-a8b0-53407a9cda42")
+	)
 	(label "RJ_LED2_PIN1"
-		(at 115.57 167.64 0)
+		(at 107.95 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3047,6 +3261,16 @@
 		)
 		(uuid "3dad21a9-8ccc-4d4c-8ef9-e984f0697241")
 	)
+	(label "USART1_RX"
+		(at 149.86 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41b8a49f-e53a-4a42-a305-98af1668b0a6")
+	)
 	(label "RJ_LED1_PIN2"
 		(at 257.81 43.18 0)
 		(effects
@@ -3068,7 +3292,7 @@
 		(uuid "4c8acc0c-402d-4b44-819e-c51fc797547f")
 	)
 	(label "RJ_LED1_PIN2"
-		(at 115.57 154.94 0)
+		(at 140.97 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3097,18 +3321,8 @@
 		)
 		(uuid "9c8e4344-5645-4fb2-bdd0-7cd222b9c694")
 	)
-	(label "USART1_RX"
-		(at 158.75 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9dfc9053-fc31-4105-bb0a-0273af2ac88f")
-	)
 	(label "RJ_LED2_PIN2"
-		(at 115.57 170.18 0)
+		(at 140.97 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3138,7 +3352,7 @@
 		(uuid "b01a10af-cda6-472b-a571-cf0c487d7e75")
 	)
 	(label "RJ_LED1_PIN1"
-		(at 115.57 152.4 0)
+		(at 107.95 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3146,16 +3360,6 @@
 			(justify left bottom)
 		)
 		(uuid "cda355b5-f2da-45d3-b235-7464070427b1")
-	)
-	(label "USART1_TX"
-		(at 158.75 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4ad3fd0-add5-4942-8fbe-a4de8064fa12")
 	)
 	(label "RS_485_B"
 		(at 179.07 100.33 0)
@@ -3231,6 +3435,193 @@
 			(justify right)
 		)
 		(uuid "f8a5475f-942a-4ec2-8241-952b4ca9de99")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 143.51 181.61 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1fd56f34-625a-454b-a0f5-7d5926bd88de")
+		(property "Reference" "R32"
+			(at 143.51 179.324 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 143.764 181.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 143.51 183.388 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3e8fdf3b-b22c-4f69-afdc-9128be6ab927")
+		)
+		(pin "1"
+			(uuid "b2018308-2b59-4422-82cb-0fc4e278d8b8")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 101.6 149.86 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "241af13a-e97f-44da-a97f-362c12aed672")
+		(property "Reference" "JP1"
+			(at 99.06 148.5899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 99.06 151.1299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 101.6 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 114.3 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 119.38 149.86 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 121.92 149.86 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f395c209-a829-43d7-aa59-d4e0d53fae6d")
+		)
+		(pin "1"
+			(uuid "2d84d62a-f517-45dd-9449-ea096365ae25")
+		)
+		(pin "3"
+			(uuid "9fb97b52-bb39-47c1-95c9-965682bb970e")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -3490,6 +3881,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 143.51 157.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3359199e-b7ce-4628-9c53-93f7374df0e7")
+		(property "Reference" "R30"
+			(at 143.51 155.194 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 143.764 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 143.51 159.258 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b8bddc67-adfe-4cd2-ac6e-818d18345be2")
+		)
+		(pin "1"
+			(uuid "2e1b2d62-8d0e-40f1-80b8-441315bd940a")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 76.2 38.1 90)
 		(unit 1)
@@ -3651,8 +4121,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 152.4 167.64 90)
+		(lib_id "power:+3.3V")
+		(at 134.62 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3660,9 +4130,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "40fe0d45-4a82-4a92-8fe8-143b56deb123")
-		(property "Reference" "R21"
-			(at 152.4 165.354 90)
+		(fields_autoplaced yes)
+		(uuid "41a887ae-e3e6-4c16-bc3e-20d59f1359c1")
+		(property "Reference" "#PWR080"
+			(at 134.62 147.32 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3671,8 +4143,8 @@
 				)
 			)
 		)
-		(property "Value" "1k"
-			(at 152.654 167.64 90)
+		(property "Value" "+3.3V"
+			(at 134.62 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3681,8 +4153,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 152.4 169.418 90)
+		(property "Footprint" ""
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,7 +4165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 167.64 0)
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3703,8 +4175,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 152.4 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3713,17 +4185,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "97d43bf5-d1e7-40e1-8dfb-ae7aa5f06986")
 		)
 		(pin "1"
-			(uuid "9b3a9064-3a09-4be8-bd2b-0ba40ca029dc")
+			(uuid "e1e52bc8-4f8e-43ac-8366-0a41979a5b74")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R21")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -3802,85 +4271,6 @@
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 109.22 152.4 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "48b38b45-0249-4474-b9de-39edc69ec7c5")
-		(property "Reference" "R30"
-			(at 109.22 150.114 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 109.22 152.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 109.22 150.622 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 109.22 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7cf82ed-af31-4d06-b703-a863c7cb98a0")
-		)
-		(pin "2"
-			(uuid "809f7bc3-f2aa-4189-b3ac-72ebea9d51f0")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -4039,85 +4429,6 @@
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
 					(reference "TP17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 134.62 154.94 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5e127b78-bbe5-46b1-9d03-4dcf31fcce96")
-		(property "Reference" "R35"
-			(at 134.62 156.972 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 134.62 154.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 134.62 153.162 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 134.62 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79a598a8-fd59-432e-85c7-0fbca32411c5")
-		)
-		(pin "2"
-			(uuid "e7f2a8ae-4582-49de-94c2-6df16df2fa25")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -4628,85 +4939,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 170.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7272ce1d-633c-4a12-b1b0-4dade3f2eb85")
-		(property "Reference" "R37"
-			(at 134.62 172.212 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 134.62 170.18 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 134.62 168.402 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 134.62 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1defc603-19a0-4ff8-b612-2c0b7bd01282")
-		)
-		(pin "2"
-			(uuid "8997e5f2-e63d-4062-9a09-29ad1f14697c")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 167.64 95.25 0)
 		(unit 1)
@@ -4865,85 +5097,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 109.22 167.64 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "854209c4-f3d3-46ab-9da5-5e0f0addc761")
-		(property "Reference" "R31"
-			(at 109.22 165.354 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 109.22 167.64 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 109.22 165.862 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 109.22 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b5925b50-00e5-43c1-996a-93e8b4a048d6")
-		)
-		(pin "2"
-			(uuid "fea689dd-af0e-48cd-83d9-3bda03688794")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 228.6 102.87 0)
 		(unit 1)
 		(body_style 1)
@@ -5025,8 +5178,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 167.64 270)
+		(lib_id "power:+3.3V")
+		(at 101.6 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5034,9 +5187,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9bb0db6a-edc0-4661-9768-c1e5f3bd9f8c")
-		(property "Reference" "R36"
-			(at 134.62 165.354 90)
+		(fields_autoplaced yes)
+		(uuid "9a58202c-18eb-4fe6-abe7-60dfccc6618c")
+		(property "Reference" "#PWR081"
+			(at 101.6 171.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5045,8 +5200,8 @@
 				)
 			)
 		)
-		(property "Value" "0"
-			(at 134.62 167.64 90)
+		(property "Value" "+3.3V"
+			(at 101.6 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5055,8 +5210,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 134.62 165.862 90)
+		(property "Footprint" ""
+			(at 101.6 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5067,7 +5222,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 167.64 0)
+			(at 101.6 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5077,8 +5232,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 134.62 167.64 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 101.6 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5089,15 +5244,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "974386be-2950-49ba-9ec2-55df91f0f63f")
-		)
-		(pin "2"
-			(uuid "2c1a9b99-30d9-4708-bf47-8c68d30887a1")
+			(uuid "3023d757-fd8e-45b5-8d3c-5422add7279e")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R36")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -5182,38 +5334,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 109.22 170.18 270)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 101.6 173.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9fbda234-561e-4387-b154-3ea38304d46d")
-		(property "Reference" "R32"
-			(at 109.22 172.212 90)
+		(fields_autoplaced yes)
+		(uuid "a6b694d9-0901-4e79-8278-09d4801aacdb")
+		(property "Reference" "JP3"
+			(at 99.06 172.7199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "0"
-			(at 109.22 170.18 90)
+		(property "Value" "SolderJumper_3_Open"
+			(at 99.06 175.2599 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 109.22 168.402 90)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 101.6 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5224,7 +5380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 170.18 0)
+			(at 116.84 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,8 +5390,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 109.22 170.18 0)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 114.3 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5245,16 +5401,41 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "7a984ce6-1f66-47a6-963c-7d90b40c6bd5")
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 119.38 173.99 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 121.92 173.99 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "a7cb1ebc-210b-4b1e-a26d-bfe151133b84")
+			(uuid "028c80ad-dd65-492b-bb38-8043b54cbc19")
+		)
+		(pin "1"
+			(uuid "392f3d10-c377-4d4b-b75e-6d8ea34376da")
+		)
+		(pin "3"
+			(uuid "efcd3acf-1cf9-403e-8bcb-9673bb5628f6")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R32")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -5334,6 +5515,114 @@
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
 					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 134.62 149.86 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaecea52-84e6-40a9-98d6-27a42e7ac473")
+		(property "Reference" "JP2"
+			(at 132.08 148.5899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 132.08 151.1299 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 134.62 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 147.32 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 152.4 149.86 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 154.94 149.86 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3a2b15b7-0e92-4047-8bea-2a69ae3b90df")
+		)
+		(pin "1"
+			(uuid "ba88c22b-0e4d-442b-94ef-32997402df34")
+		)
+		(pin "3"
+			(uuid "82bd2ba3-3816-43b8-82a4-2a60c2bcc36d")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -5497,6 +5786,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 134.62 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdd23d98-0f52-4bc5-8775-f0f06ffe8fec")
+		(property "Reference" "#PWR082"
+			(at 134.62 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 134.62 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 134.62 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cf4205a-aa55-44f8-b554-d3fccc36d017")
+		)
+		(instances
+			(project "STM32_DevBoard"
+				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 143.51 63.5 0)
 		(unit 1)
@@ -5575,87 +5942,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 134.62 152.4 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d12fbbc4-d85e-4bff-a4a6-75d3660e31ba")
-		(property "Reference" "R34"
-			(at 134.62 150.114 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 134.62 152.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 134.62 150.622 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 134.62 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b69eac57-5d2c-40be-a343-06372c6c8dd5")
-		)
-		(pin "2"
-			(uuid "c266b166-aaa1-4e2c-9065-d983642ed028")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 101.6 146.05 0)
+		(at 101.6 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5666,7 +5954,7 @@
 		(fields_autoplaced yes)
 		(uuid "d51533f5-d0bc-45a2-9178-dd0708f63030")
 		(property "Reference" "#PWR079"
-			(at 101.6 149.86 0)
+			(at 101.6 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5677,7 +5965,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 101.6 140.97 0)
+			(at 101.6 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5687,7 +5975,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 146.05 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5698,7 +5986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 146.05 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5709,7 +5997,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 101.6 146.05 0)
+			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5732,38 +6020,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 152.4 152.4 90)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 134.62 173.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e3f84c1c-f5ce-43b8-babd-9fae1fc0db08")
-		(property "Reference" "R20"
-			(at 152.4 150.114 90)
+		(fields_autoplaced yes)
+		(uuid "db525111-459f-4a62-9a6d-278f3f9950e7")
+		(property "Reference" "JP4"
+			(at 132.08 172.7199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 152.654 152.4 90)
+		(property "Value" "SolderJumper_3_Open"
+			(at 132.08 175.2599 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 152.4 154.178 90)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 134.62 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5774,7 +6066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 152.4 0)
+			(at 149.86 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5784,10 +6076,32 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 152.4 152.4 0)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 147.32 173.99 0)
 			(hide yes)
 			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S5.1" "This is a generic symbol, it has fp-filter, but no default footprint"
+			(at 152.4 173.99 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "Graphical-Symbol: thickness is 6mm, fill is background"
+			(at 154.94 173.99 0)
+			(hide yes)
+			(show_name yes)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -5796,15 +6110,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "7ecaa44b-99e6-46b0-bcef-14600200f427")
+			(uuid "bad43c7a-bca6-4a86-b5e2-ec7dba8c621e")
 		)
 		(pin "1"
-			(uuid "37eb0504-a402-4f8f-964c-442d98f8a453")
+			(uuid "a7e1f0c5-4bc6-407d-b906-3aa0c8cf6411")
+		)
+		(pin "3"
+			(uuid "a4be972b-8db2-4e9b-8903-6fae138743a5")
 		)
 		(instances
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R20")
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -5962,85 +6279,6 @@
 			(project "STM32_DevBoard"
 				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
 					(reference "TP15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 109.22 154.94 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ee276809-9659-4ad0-95b6-626c57dc9c92")
-		(property "Reference" "R33"
-			(at 109.22 156.972 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 109.22 154.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 109.22 153.162 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 109.22 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "142d9ea1-1e30-466b-93c9-4ca3e7fd99a0")
-		)
-		(pin "2"
-			(uuid "4a619b91-01bd-4126-95d6-af92844d62b6")
-		)
-		(instances
-			(project "STM32_DevBoard"
-				(path "/1ce911dd-e46b-4dca-9b0b-c360e42c38af/f78ee303-6dc3-43bd-ada2-cc664ca57914"
-					(reference "R33")
 					(unit 1)
 				)
 			)
