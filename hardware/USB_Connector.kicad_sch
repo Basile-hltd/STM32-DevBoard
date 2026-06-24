@@ -2060,6 +2060,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Don't mount R12 and R13\n"
+		(exclude_from_sim no)
+		(at 214.63 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "12a73d6f-929a-4bb4-8e6a-f67412be78fd")
+	)
 	(junction
 		(at 209.55 96.52)
 		(diameter 0)

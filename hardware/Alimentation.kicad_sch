@@ -1612,12 +1612,12 @@
 	)
 	(hierarchical_label "+3.3V"
 		(shape bidirectional)
-		(at 196.85 86.36 0)
+		(at 196.85 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "3f5ad5ce-18ac-430c-b416-46e6146a53f5")
 	)
