@@ -1,3 +1,5 @@
+ENTRY(reset_handler)
+
 MEMORY
 {
     FLASH (rx)  : ORIGIN = 0x08000000, LENGTH = 32K
@@ -6,7 +8,7 @@ MEMORY
 
 SECTIONS
 {
-    .vectors : { *(.vectors) } > FLASH
+    .vectors : { KEEP(*(.vectors)) } > FLASH
     .text    : { *(.text*)   } > FLASH
     .rodata  : { *(.rodata*) } > FLASH
     .data    : { *(.data*)   } > SRAM AT > FLASH
