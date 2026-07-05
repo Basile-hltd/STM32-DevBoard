@@ -2,73 +2,108 @@
 
 Carte de développement autour d'un microcontrôleur STM32, conçue pour l'acquisition de données environnementales, la communication industrielle et l'expansion vers breadboard ou systèmes embarqués tiers.
 
-> **Contenu actuel du dépôt :** projet KiCad (schématique + layout PCB).
+> **Contenu actuel du dépôt :**
+>- projet KiCad (schématique + layout PCB).
+>- Lib static HAL (propre à ce PCB).
+>- Projects exemple (utilisant la lib)
 
 ---
 
 ![Schéma bloc de la carte](hardware/STM32_DevBoard.png)
 
----
+## Fonctionnalités PCB
 
-## Fonctionnalités
-
-### Acquisition — bus I²C
+### I²C - Capteur
 Quatre capteurs partagent le même bus I²C :
 - Pression barométrique
 - Qualité de l'air (COV / CO₂ équivalent)
 - Température
 - Humidité relative
 
-### Affichage & stockage — bus SPI
-- Écran (type TFT ou e-ink selon variante)
-- Lecteur de carte microSD pour journalisation locale
+### SPI - Affichage & stockage
+- Écran (Color TFT 160x80)
+- Carte microSD
 
-### Connectivité USB
-Connecteur **USB-C** câblé directement au microcontrôleur (Full-Speed). Les broches `CC1` et `CC2` sont reliées à deux canaux **ADC** du STM32, permettant de lire la puissance négociée avec l'hôte USB.
+### USB
+Connecteur **USB-C** câblé directement au microcontrôleur (Full-Speed).
 
-### Communication industrielle — RS-485 / RJ45
+### RS-485
 Port **RJ45** utilisé comme connecteur de terrain pour un bus **RS-485** :
 - Piloté via **UART** du MCU
 - **Pin de direction** (DE/RE) exposé pour la gestion half-duplex
 - Alimentation **48 V** optionnelle injectée sur le bus RS-485 et sur le RJ45 via un connecteur **Wago** monté sur la carte (alimentation fantôme ou PoE industriel)
 
 ### Interface utilisateur
-- **LED RGB** (pilotée GPIO ou PWM)
-- **Encodeur rotatif** avec bouton-poussoir intégré
+- **LED RGB**
+- **Encodeur rotatif** avec bouton-poussoir
 
-### Extension — Port B
+### Port B - Extension
 Deux **pin headers 8 broches** (2 × 8 = 16 broches) exposant l'intégralité du **Port B** du STM32. Permet de connecter la carte à une breadboard, un shield ou tout autre sous-système externe sans soudure.
-
----
-
-## Brochage résumé
-
-| Bus / Signal | Interface STM32 | Connecteur carte |
-|---|---|---|
-| Capteurs environnementaux | I²C (SDA / SCL) | Interne |
-| Écran + SD | SPI (MOSI / MISO / SCK / CS×2) | Interne |
-| USB | USB_DP / USB_DM | USB-C |
-| Détection puissance USB | ADC (ACC1, ACC2) | Interne |
-| RS-485 | UART TX/RX + GPIO DIR | RJ45 |
-| Alimentation 48 V | — | Wago |
-| LED RGB | GPIO / TIM (PWM) | Interne |
-| Encodeur rotatif | GPIO (A, B, SW) | Interne |
-| Port B | GPIOB[0..15] | 2× header 8 pins |
 
 ---
 
 ## Structure du dépôt
 
 ```
-.
-├── hardware/
-│   ├── stm32-devboard.kicad_pro   # Projet KiCad
-│   ├── stm32-devboard.kicad_sch   # Schématique
-│   ├── stm32-devboard.kicad_pcb   # Layout PCB
-│   ├── symbols/                   # Table des bibliothèques de symboles
-│   ├── footprint/                 # Table des bibliothèques d'empreintes
-│   └── 3d_models/                 # Table des bibliothèques de model 3d
-└── README.md
+C:.
+│   README.md
+│   
+├───documentation
+│   │   .gitignore
+│   │   *.pdf
+│   │   
+│   ├───datasheet
+│   │       *.pdf
+│   │       
+│   └───script
+│           Datasheet_Downloader.py
+│           Digikey_Datasheet_List.csv
+│           requirements.txt
+│           
+├───hardware
+│   │   .gitignore
+│   │   STM32_DevBoard.kicad_pcb
+│   │   STM32_DevBoard.kicad_prl
+│   │   STM32_DevBoard.kicad_pro
+│   │   STM32_DevBoard.kicad_sch
+│   │   STM32_DevBoard.pdf
+│   │   STM32_DevBoard.png
+│   │       
+│   ├───3d_models
+│   │       *.step
+│   │       
+│   ├───footprints
+│   │       *.kicad_mod
+│   │       
+│   └───symbols
+│           *.kicad_sym
+│           
+└───software
+    │   .gitignore
+    │   arm-none-eabi.cmake
+    │   CMakeLists.txt
+    │   stm32c0.ld
+    │           
+    ├───Blinky
+    │   │   CMakeLists.txt
+    │   │   
+    │   └───src
+    │           main.c
+    │                       
+    └───DevBoard_HAL
+        │   CMakeLists.txt
+        │   
+        └───src
+            │   init.c
+            │   rgb_led.c
+            │   startup.c
+            │   
+            └───headers
+                    init.h
+                    registers.h
+                    rgb_led.h
+                    STM32_DevBoard.h
+                    
 ```
 
 ---
@@ -76,13 +111,34 @@ Deux **pin headers 8 broches** (2 × 8 = 16 broches) exposant l'intégralité du
 ## Prérequis
 
 - **KiCad 8.x** ou supérieur
-- Bibliothèques KiCad standard (incluses dans l'installation par défaut)
+- Bibliothèques KiCad standard 
+- CMake
+- arm-none-eabi
+- STM32Cube-Programmer
+---
+
+## Mise en route
+
+### Compilation
+crée un dossier build dans `software/`, initialiser cmake, puis compiler.
+
+```
+mkdir software/build
+cd software/build
+cmake -DCMAKE_TOOLCHAIN_FILE="../arm-none-eabi.cmake" ..
+cmake --build .
+```
+
+Cela va buils le HAL ainsi que toutes la applications. Le premier build peut prendre plus de temps. Les binaire des applications se trouvent dans `software/bin/le_nom_de_lapp/`
 
 ---
 
-## Futures Amlelioration
+## Futures Amleliorations
 
-- Ajout de pin d'alim et de masse sur les pin du port B
+- Ajuster les dimension du PCB
+- Réduire la taille du PCB
+- Ajout de pin d'alimentation et de masse sur les pin du port B
 - Diodes TVS et sécurité sur bus RS_485 (Alim et signaux)
+- Implémenter protocole power delivery USB-C (48V sur usb-c et non wage par exemple ou que le STM32 puisse connaitre les capacité de l'alim)
 
 ---
