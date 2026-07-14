@@ -1,5 +1,7 @@
 #include <stdint.h>
 
+#define FLASH_ACR       (*(volatile uint32_t *)0x40022000UL)
+
 #define RCC             (*(volatile uint32_t *)0x40021000UL)
 #define RCC_IOPENR      (*(volatile uint32_t *)0x40021034UL)
 

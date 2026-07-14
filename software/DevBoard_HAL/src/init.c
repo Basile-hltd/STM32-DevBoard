@@ -2,6 +2,15 @@
 
 void STM32_DevBoard_HAL_Init(void){
 
+    //========== Flash init ==========
+
+    FLASH_ACR |= 0x00000001;        // xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxx1
+    while ((FLASH_ACR & 0x00000001) == 0);
+
+    //========== Clock init ==========
+
+    RCC &= ~0x00003800;             // xxxxxxxx xxxxxxxx xx000xxx xxxxxxxx
+
     //========== RGB_Led init ==========
 
     RCC_IOPENR |=  0x0000002F;      // xxxxxxxx xxxxxxxx xxxxxxxx xx1x1111 
