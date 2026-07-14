@@ -114,6 +114,7 @@ C:.
 - Bibliothèques KiCad standard 
 - CMake
 - arm-none-eabi
+- dfu-util
 - STM32Cube-Programmer
 ---
 
