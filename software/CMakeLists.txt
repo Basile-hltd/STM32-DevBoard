@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(STM32_DevBoard)
 
+find_program(OBJCOPY arm-none-eabi-objcopy REQUIRED)
+find_program(DFU_UTIL dfu-util REQUIRED)
+
 set(CMAKE_CXX_STANDARD 17)
 set(MCU_FLAGS "-mcpu=cortex-m0plus -mthumb -mfloat-abi=soft")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${MCU_FLAGS} -Wall -ffunction-sections -fdata-sections -nostdlib")
