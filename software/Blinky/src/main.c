@@ -12,7 +12,7 @@ int main(){
         color = (color + 1) % RGB_LED_COLOR_COUNT;
         RGB_SetColor(color);
 
-        for (volatile uint32_t i = 0; i != 0x000FFFFF; i++);
+        for (volatile uint32_t i = 0; i != 0x00F00000; i++);
         
     }
 
