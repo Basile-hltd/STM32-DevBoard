@@ -127,7 +127,18 @@ crée un dossier build dans `software/`, initialiser cmake, puis compiler.
 mkdir software/build
 cd software/build
 cmake -DCMAKE_TOOLCHAIN_FILE="../arm-none-eabi.cmake" ..
+```
+compiler avec :
+
+```
 cmake --build .
+```
+
+ou flasher avec
+
+```
+cmake --build . --target flash_{nom du dossier d'app}
+cmake --build . --target flash_Blinky
 ```
 
 Cela va buils le HAL ainsi que toutes la applications. Le premier build peut prendre plus de temps. Les binaire des applications se trouvent dans `software/bin/le_nom_de_lapp/`
