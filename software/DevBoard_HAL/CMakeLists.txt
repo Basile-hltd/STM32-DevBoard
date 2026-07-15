@@ -2,6 +2,7 @@ add_library(STM32_DevBoard_HAL STATIC
     src/startup.c    
     src/init.c    
     src/rgb_led.c
+    src/delay.c
 )
 
 target_include_directories(STM32_DevBoard_HAL PUBLIC

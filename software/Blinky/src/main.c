@@ -8,12 +8,17 @@ int main(){
 
     rgb_led_color color = BLACK;
 
+    Delay(500);
+
     while(1){
         color = (color + 1) % RGB_LED_COLOR_COUNT;
         RGB_SetColor(color);
 
-        for (volatile uint32_t i = 0; i != 0x00F00000; i++);
+        Delay(500);
+
+        RGB_Off();
         
+        Delay(500);
     }
 
 }
