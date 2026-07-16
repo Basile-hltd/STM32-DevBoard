@@ -12,3 +12,4 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -T${CMAKE_CURRENT_SOURCE_D
 
 add_subdirectory(DevBoard_HAL)
 add_subdirectory(Blinky)
+add_subdirectory(Display)
