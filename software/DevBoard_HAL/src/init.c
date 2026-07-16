@@ -69,4 +69,7 @@ void STM32_DevBoard_HAL_Init(void){
     SPI1_CR2 |= 0x1700;             //x0010111 00000000 
 
     //========== END SPI1 init ========== 
+
+    RGB_Off();
+    st7735_init();
 }
